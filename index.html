@@ -582,7 +582,30 @@
   z-index: 9999;
   text-transform: uppercase;
 }
+.community-panel {
+  padding: 24px;
+}
 
+.community-widget-wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(0,0,0,.22);
+}
+
+.community-widget {
+  display: block;
+  width: 100%;
+  height: 320px;
+}
+
+.community-actions {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
   </style>
 </head>
 <body>
@@ -596,7 +619,8 @@
         <a href="#download">配布</a>
         <a href="#news">更新</a>
         <a href="https://youtube.com" target="_blank">YouTube</a>
-        <a href="https://discord.gg/9AAtSuuf26" target="_blank">Discord</a>
+        <a href="https://discord.com/widget?id=1489144567822286970&theme=dark" target="_blank">Discord</a>
+
       </nav>
     </div>
   </header>
@@ -740,6 +764,8 @@
       </div>
     </section>
 
+
+
     <section id="download">
       <div class="container">
         <div class="panel download">
@@ -791,12 +817,39 @@
     </section>
   </main>
 
+<section id="community">
+  <div class="container">
+    <div class="section-head">
+      <h2>Community</h2>
+      <p>最新情報や交流は Discord から参加できます。</p>
+    </div>
+
+    <div class="panel community-panel">
+      <div class="community-widget-wrap">
+        <iframe
+          src="https://discord.com/widget?id=ここにサーバーID&theme=dark"
+          class="community-widget"
+          allowtransparency="true"
+          frameborder="0">
+        </iframe>
+      </div>
+
+      <div class="community-actions">
+        <a href="https://discord.gg/9AAtSuuf26" target="_blank" class="button primary">
+          Discordに参加
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
   <footer>
     <div class="container footer-box">
       <div>© Astral Imperium</div>
       <div><a href="#top">ページ上部へ戻る</a></div>
     </div>
   </footer>
+
 
 
 <div id="comingSoonOverlay">COMING SOON</div>
