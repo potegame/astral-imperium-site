@@ -567,21 +567,7 @@
     }
 
 
-#comingSoonOverlay {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 6vw;
-  font-weight: 800;
-  letter-spacing: 0.2em;
-  color: rgba(168,62,37,0.28); /* ダーク赤 */
-  background: rgba(0,0,0,0.5);
-  pointer-events: none;
-  z-index: 9999;
-  text-transform: uppercase;
-}
+
 .community-panel {
   padding: 24px;
 }
@@ -605,6 +591,14 @@
   margin-top: 18px;
   display: flex;
   justify-content: center;
+}
+
+.download-warning {
+  margin-top: 12px;
+  color: #ff5a5a;
+  font-family: "Segoe UI", "Yu Gothic", sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.6;
 }
   </style>
 </head>
@@ -778,12 +772,20 @@
               Windows版の最新版はこちらから取得できます。<br />
             </p>
             <div class="download-note">
-              例：Version 1.0.0 / Windows 10・11 / 約700MB / 最終更新日 2026.04.02
+              Version 1.0.7 / Windows 10・11 / 約800MB / 最終更新日 2026.04.07
             </div>
+<div class="download-warning">
+  ※ 初回ダウンロード時にセキュリティ警告が表示される場合があります。<br>
+  「詳細情報」→「実行」を選択することで起動できます。<br>
+  本ソフトは安全に使用できますのでご安心ください。
+</div>
           </div>
           <div class="hero-actions" style="margin:0;">
-            <a class="button primary" href="#">最新版をダウンロード</a>
-            <a class="button secondary" href="#news">更新履歴を見る</a>
+<a class="button primary"
+   href="https://github.com/potegame/astral-imperium/releases/download/v1.0.7/Astral-Imperium-Web-Setup-1.0.7.exe"
+   target="_blank">
+  最新版をダウンロード
+</a>            <a class="button secondary" href="#news">更新履歴を見る</a>
           </div>
         </div>
       </div>
@@ -797,6 +799,11 @@
           <p></p>
         </div>
         <div class="news-list">
+          <article class="panel news-item">
+            <time datetime="2026-04-02">2026.04.07</time>
+            <strong>β版v1.0.7リリース開始</strong>
+            <p>やっとできました。まだバグ等あると思うのでテストプレーヤとしてご協力ください！</p>
+          </article>
           <article class="panel news-item">
             <time datetime="2026-04-02">2026.04.06</time>
             <strong>クローズドβテスト開始</strong>
@@ -832,7 +839,7 @@
     <div class="panel community-panel">
       <div class="community-widget-wrap">
         <iframe
-          src="https://discord.com/widget?id=ここにサーバーID&theme=dark"
+          src="https://discord.com/widget?id=1489144567822286970&theme=dark"
           class="community-widget"
           allowtransparency="true"
           frameborder="0">
@@ -856,8 +863,6 @@
   </footer>
 
 
-
-<div id="comingSoonOverlay">COMING SOON</div>
 
 </body>
 </html>
